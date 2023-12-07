@@ -1,0 +1,154 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tweetId",
+						"type": "uint256"
+					}
+				],
+				"name": "AddTweet",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tweetId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "isDeleted",
+						"type": "bool"
+					}
+				],
+				"name": "DeleteTweet",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "tweetText",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isDeleted",
+						"type": "bool"
+					}
+				],
+				"name": "addTweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tweetId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isDeleted",
+						"type": "bool"
+					}
+				],
+				"name": "deleteTweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tweetId",
+						"type": "uint256"
+					}
+				],
+				"name": "getTweet",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/News_demo.sol": "NewsDemo"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/News_demo.sol": {
+			"keccak256": "0xa400b82a9f3a6387748ed9c3d7a6f81bd59fd96e29bdc84d50b3f9270fa7a5de",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://98dab6e6108cd4edfb9fe9511971b6c98b0f8e027564a98a685afd4783919ad0",
+				"dweb:/ipfs/QmPFKvjrTsYWPj7Qqi4CCTdhWYaa8rbcovLPjj4ttbyB6n"
+			]
+		}
+	},
+	"version": 1
+}
