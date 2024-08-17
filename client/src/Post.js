@@ -10,7 +10,7 @@ import PublishIcon from "@mui/icons-material/Publish";
 function Post({tweet}) {
     
     useEffect(() => {
-        // Đảm bảo rằng tweets đã được cập nhật khi có sự kiện AddTweet
+        // 
         console.log("Updated tweets in Post:", tweet);
       }, [tweet]);
     
@@ -30,7 +30,7 @@ function Post({tweet}) {
                     </h3>
                 </div>
                 <div className='post__headerDescription'>
-                    <p>{tweet[2] || "No news content"}</p>
+                    <p>{tweet[2] || "This is my 1st News !!!"}</p>
                 </div>
             </div>
             <div className='post__footer'>
