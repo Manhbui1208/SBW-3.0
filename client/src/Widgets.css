@@ -1,31 +1,47 @@
-.widgets {
-    flex: 0.3;
-}
-  
+/* Widgets.css */
+
 .widgets__input {
-    display: flex;
-    align-items: center;
-    background-color: var(--twitter-background);
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 20px;
+  margin-left: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.widgets__input > input {
-    border: none;
-    background-color: var(--twitter-background);
+.widgets__input input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 7px;
+  font-size: 12px;
 }
 
-.widgets__widgetContainer {
-    margin-top: 15px;
-    margin-left: 20px;
-    padding: 20px;
-    background-color: #f5f8fa;
-    border-radius: 20px;
-  }
-  
-  .widgets__widgetContainer > h2 {
-    font-size: 18px;
-    font-weight: 800;
-  }
+.widgets__input input::placeholder {
+  color: #808080;
+}
+
+.widgets__searchIcon {
+  color: #1103e0;
+}
+
+.widgets__searchButton {
+  background-color: #1da1f2;
+  color: #bde4f3;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.widgets__searchButton:hover {
+  background-color: #0d8ae3;
+}
+
+.widgets__input:hover {
+  box-shadow: 0 8px 12px rgba(146, 163, 240, 0.37);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Add more styles as needed */
