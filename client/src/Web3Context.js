@@ -122,7 +122,7 @@ export const Web3Provider = ({children}) => {
         const initWeb3 = async () => {
             try {
              //Config Web3 and Contract
-            const web3Instance = new Web3(new Web3.providers.WebsocketProvider('ws://192.168.51.151:8546'))
+            const web3Instance = new Web3(new Web3.providers.WebsocketProvider(''))
             const contractInstance = new web3Instance.eth.Contract(ABI, '0xd5331F08F6F6423e26DfaC05a2ea129e52c5936a')
 
             setWeb3(web3Instance);
