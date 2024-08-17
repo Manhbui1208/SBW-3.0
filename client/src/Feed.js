@@ -15,19 +15,22 @@ function Feed() {
     if (!tweets) {
         return <div>Loading...</div>
     }
-  
+
+
+
+
     return (
       <div className='feed'>
           {/*Header */}
-          <div className='feed__header'>
-          <h2>News</h2>
-          </div>
+    
+
   
-          {/* Post */}
+          {Post}
           {tweets.map((tweet) => (
             <Post key={tweet.id} tweet={tweet} />
           ))}
       </div>
+
     )
   }
 
